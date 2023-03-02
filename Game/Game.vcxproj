@@ -59,7 +59,7 @@
       <ConformanceMode>true</ConformanceMode>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)Surreal\src;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Surreal\src;$(SolutionDir)Surreal\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -76,7 +76,7 @@
       <ConformanceMode>true</ConformanceMode>
       <UndefinePreprocessorDefinitions>
       </UndefinePreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)Surreal\src;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Surreal\src;$(SolutionDir)Surreal\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
