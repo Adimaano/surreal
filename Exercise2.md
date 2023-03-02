@@ -1,21 +1,18 @@
-What is the difference between git and github?
-  - Git is the version control system, with which to create, remove, manage the project repository.
-  - GitHub is a platform on which many repositories are stored and accessible, while also providing an interface for interacting (using some git tools) with the repositories through the browser.
+Describe a logging system with your own words:
+  Framework for printing text out to the user, be it for debugging at development or general info when running an application
 
-Name 3 benefits of a version control system
-  - Allows for a dynamic and collaborative workflow --> Parallel feature development by branching. 
-  - High flexiblity for development cycles --> Rolling releases dont break other developers progress. --> just pull the changes from main.
-  - Very effective Backup strategy --> Every change being a commit is logged and each can act as backup point to restore from. --> Very detailed change/development history with numerous restore points
+What is the difference between git submodules and git subtrees
+  submodules saves just the links/HEAD to remote repositories to include into the project.
+  subtrees includes all of the project including its history.
 
-Name 3 alternatives to git
-  - Mercurial
-  - SVN
-  - Rational ClearCase.
+What is a build system in C++? Name 3 build systems: 
+   build system is a collection of software tools that is used to facilitate the build process
+  - Premake
+  - Cmake
+  - Qmake
 
-Name 2 differences between git and other version control systems
-  - Git uses a hash-based architecture (hash acts an for every commit)
-  - distributed
-
-Name known issues related to game engines (Unreal, Unity) and version control systems
-  - Differences and thereby merging of binaries is just bad. Since that is what Games will be based on.
-  - One of the biggest components of Game Development are the assets, which will come bundled in any game project. Differences there are also unmergable.
+What is a package manager in C++? Name 3 package manager:
+  A tool to download, update and general maintenance of libraries, binaries, frameworks and tools 
+  - vcpkg
+  - Conan
+  - Spack
