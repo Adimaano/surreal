@@ -1,4 +1,4 @@
-workspace "Surreal"
+workspace "SurrealEngine"
 	architecture "x64"
 	
 	configurations
@@ -36,30 +36,30 @@ project "Surreal"
 		
 		defines
 		{
-			"PW_PLATFORM_WINDOWS",
-			"PW_BUILD_DLL"
+			"SR_PLATFORM_WINDOWS",
+			"SR_BUILD_DLL"
 		}
 		
 		postbuildcommands
 		{
-			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
+			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Game")
 		}
 		
 	filter "configurations:Debug"
-		defines "PW_DEBUG"
+		defines "SR_DEBUG"
 		symbols "On"
 		
 	filter "configurations:Release"
-		defines "PW_RELEASE"
+		defines "SR_RELEASE"
 		optimize "On"
 		
 	filter "configurations:Dist"
-		defines "PW_DIST"
+		defines "SR_DIST"
 		optimize "On"
 
 		
-project "Sandbox"
-	location "Sandbox"
+project "Game"
+	location "Game"
 	kind "ConsoleApp"
 	language "C++"
 	
@@ -90,17 +90,17 @@ project "Sandbox"
 		
 		defines
 		{
-			"PW_PLATFORM_WINDOWS"
+			"SR_PLATFORM_WINDOWS"
 		}
 		
 		filter "configurations:Debug"
-		defines "PW_DEBUG"
+		defines "SR_DEBUG"
 			symbols "On"
 			
 		filter "configurations:Release"
-		defines "PW_RELEASE"
+		defines "SR_RELEASE"
 			optimize "On"
 		
 		filter "configurations:Dist"
-		defines "PW_DIST"
+		defines "SR_DIST"
 			optimize "On"
