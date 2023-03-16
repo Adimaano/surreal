@@ -41,7 +41,8 @@ project "Surreal"
 
 	links 
 	{
-		"GLFW"
+		"GLFW",
+		"opengl32.lib"
 	}
 	
 	filter "system:windows"

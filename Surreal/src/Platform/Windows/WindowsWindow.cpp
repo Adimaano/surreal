@@ -12,7 +12,7 @@ namespace Surreal
 	static bool s_GLFWInitialized = false;
 
 	static void GLFWErrorCallback(int error, const char* description) {
-		SR_CORE_CRITICAL("GLFW Error ({0}): {1}", error, description);
+		SR_CORE_ERROR("GLFW Error ({0}): {1}", error, description);
 	}
 
 	Window* Window::Create(const WindowProps& props)
@@ -41,7 +41,7 @@ namespace Surreal
 		{
 			int success = glfwInit();
 			SR_CORE_ASSERT(success, "Could not initialize GLFW!");
-			//glfwSetErrorCallback(GLFWErrorCallback);
+			glfwSetErrorCallback(GLFWErrorCallback);
 			s_GLFWInitialized = true;
 		}
 

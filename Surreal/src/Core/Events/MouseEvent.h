@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Event.h"
-#include "Core/Mousecodes.h"
+#include "Core/MouseCodes.h"
 
 
 namespace Surreal

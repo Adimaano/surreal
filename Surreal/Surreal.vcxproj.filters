@@ -39,7 +39,7 @@
     <ClInclude Include="src\Core\Log.h">
       <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\Core\Mousecodes.h">
+    <ClInclude Include="src\Core\MouseCodes.h">
       <Filter>Core</Filter>
     </ClInclude>
     <ClInclude Include="src\Core\Window.h">
