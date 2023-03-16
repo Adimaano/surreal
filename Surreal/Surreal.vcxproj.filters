@@ -19,6 +19,10 @@
     <ClInclude Include="src\Surreal\Log.h">
       <Filter>Surreal</Filter>
     </ClInclude>
+    <ClInclude Include="src\Surreal\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Surreal\Events\Event.h" />
+    <ClInclude Include="src\Surreal\Events\KeyEvents.h" />
+    <ClInclude Include="src\Surreal\Events\MouseEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Surreal\Application.cpp">
