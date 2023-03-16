@@ -1,7 +1,8 @@
+#include "srpch.h"
 #include "Application.h"
 
-#include "Surreal/Events/ApplicationEvent.h"
-#include "Surreal/Log.h"
+#include "Core/Events/ApplicationEvent.h"
+#include "Core/Log.h"
 
 namespace Surreal {
 
@@ -17,8 +18,10 @@ namespace Surreal {
 
 	void Application::Run()
 	{
-		WindowResizeEvent e(1280, 720);
-		SR_CORE_INFO(e);
+		while (m_Running)
+		{
+			m_Window->OnUpdate();
+		}
 
 		while (true);
 	}

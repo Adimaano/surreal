@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Surreal {
 
 	class SURREAL_API WindowResizeEvent : public Event {

@@ -1,9 +1,8 @@
+#include "srpch.h"
+
 #pragma once
 
-#include "Surreal\Core.h"
-
-#include <string>
-#include <functional>
+#include "Core\Core.h"
 
 namespace Surreal
 {
@@ -39,7 +38,8 @@ namespace Surreal
 			virtual EventType GetEventType() const = 0;
 			virtual const char* GetName() const = 0;
 			virtual int GetCategoryFlags() const = 0;
-			virtual std::string ToString() const {
+			virtual std::string ToString() const 
+			{
 				return GetName();
 			};
 			inline bool IsInCategory(EventCategory category)

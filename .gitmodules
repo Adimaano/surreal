@@ -1,3 +1,6 @@
 [submodule "Surreal/vendor/spdlog"]
 	path = Surreal/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Surreal/vendor/GLFW"]
+	path = Surreal/vendor/GLFW
+	url = https://github.com/TheCherno/glfw

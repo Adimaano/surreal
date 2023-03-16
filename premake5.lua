@@ -9,6 +9,11 @@ workspace "SurrealEngine"
 	}
 
 	outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+
+	IncludeDir = {}
+	IncludeDir["GLFW"] = "Surreal/vendor/GLFW/include"
+
+	include "Surreal/vendor/GLFW"
 	
 project "Surreal"
 	location "Surreal"
@@ -17,6 +22,9 @@ project "Surreal"
 	
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+	pchheader "srpch.h"
+	pchsource "Surreal/src/srpch.cpp"
 	
 	files
 	{
@@ -26,8 +34,14 @@ project "Surreal"
 
 	includedirs
 	{
-		"%{prj.name}/src"
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/src",
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links 
+	{
+		"GLFW"
 	}
 	
 	filter "system:windows"

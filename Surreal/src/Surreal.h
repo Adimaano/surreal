@@ -2,10 +2,10 @@
 
 // For use by Surreal applications
 
-#include "Surreal/Application.h"
-#include "Surreal/Log.h"
+#include "Core/Application.h"
+#include "Core/Log.h"
 
 
 // Entry Point
 
-#include "Surreal/EntryPoint.h"
+#include "Core/EntryPoint.h"

@@ -1,35 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Surreal">
-      <UniqueIdentifier>{C3081C12-2FE8-9AAD-3800-2684A45E010F}</UniqueIdentifier>
+    <Filter Include="Core">
+      <UniqueIdentifier>{2EB4837C-1AEB-840D-C3D7-6A10AFED000F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Events">
+      <UniqueIdentifier>{52201B74-BED5-9369-47CA-8D40B37E8A6D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Core\Application.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Core.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\EntryPoint.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\ApplicationEvent.h">
+      <Filter>Core\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\Event.h">
+      <Filter>Core\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\KeyEvent.h">
+      <Filter>Core\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Events\MouseEvent.h">
+      <Filter>Core\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Log.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Mousecodes.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Window.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\Surreal.h" />
-    <ClInclude Include="src\Surreal\Application.h">
-      <Filter>Surreal</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Surreal\Core.h">
-      <Filter>Surreal</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Surreal\EntryPoint.h">
-      <Filter>Surreal</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Surreal\Log.h">
-      <Filter>Surreal</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Surreal\Events\ApplicationEvent.h" />
-    <ClInclude Include="src\Surreal\Events\Event.h" />
-    <ClInclude Include="src\Surreal\Events\KeyEvents.h" />
-    <ClInclude Include="src\Surreal\Events\MouseEvent.h" />
+    <ClInclude Include="src\srpch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Surreal\Application.cpp">
-      <Filter>Surreal</Filter>
+    <ClCompile Include="src\Core\Application.cpp">
+      <Filter>Core</Filter>
     </ClCompile>
-    <ClCompile Include="src\Surreal\Log.cpp">
-      <Filter>Surreal</Filter>
+    <ClCompile Include="src\Core\Log.cpp">
+      <Filter>Core</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\srpch.cpp" />
   </ItemGroup>
 </Project>
